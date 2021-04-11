@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <h1 id="title">Iniciando estudos com DOM</h1>
+    <h2>Demonstraçoes</h2>
+    <h3>Teste</h3>
+    <p class="p1">Aqui vai o resultado</p>
+    <p>Requisiçoes</p>
+    <p>Aprendendo a usar o <strong> DOM </strong> em JavaScript</p>    
+    <div id="btn">Clique em mim</div>
+<script>
+    
+    var h1 = window.document.getElementById("title")
+        h1.style.color="blue"
+
+    var h2 = window.document.getElementsByName("")
+
+
+    var div = window.document.querySelector("#btn")    
+    div.style.color="red"
+
+    var p = window.document.querySelector(".p1")
+    p.style.color="green"
+
+</script>
+    
+
+
+</body>
+</html>

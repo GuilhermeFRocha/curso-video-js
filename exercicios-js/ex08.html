@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area{
+            background: green;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="area" onclick="clicar()" onmousemove="mudou()" onmouseout="saiu()">
+    Interaja...
+</div>
+
+<script>
+
+    var n = window.document.querySelector("#area")
+
+    function clicar (){
+        n.innerHTML="Clicou"
+    }
+    
+    function mudou (){
+        n.style.backgroundColor="blue"
+    }
+
+    function saiu (){
+        n.style.backgroundColor="red"
+    }
+
+</script>
+
+
+</body>
+</html>
